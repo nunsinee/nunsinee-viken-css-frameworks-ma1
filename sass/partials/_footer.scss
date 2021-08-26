@@ -1,0 +1,26 @@
+footer {
+	position: fixed;
+	height: 44px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin-bottom: 0px;
+}
+
+.footer {
+	background: getColour(primary);
+	padding: 1rem;
+	font-family: $font-headings;
+	font-size: 12px;
+
+	&__container {
+		@extend .container;
+		display: flex;
+		justify-content: space-between;
+		flex-shrink: 0;
+	}
+
+	&__item {
+		color: getColour(dark);
+	}
+}

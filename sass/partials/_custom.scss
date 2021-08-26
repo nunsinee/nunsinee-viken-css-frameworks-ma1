@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Open+Sans&display=swap");
+
+$font-primary: "Archivo Narrow", sans-serif;
+$font-headings: "Open Sans", sans-serif;
+$tablet-width: 768px;
+$box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+
+$colours: (
+	primary: #f4f3ee,
+	secondary: #e5e5e5,
+	dark: #6a6a6a,
+	dark-pink: #c32c72,
+	light-grey: #f7f7f7,
+);
+
+@function getColour($colour) {
+	@return map-get($colours, $colour);
+}
+
+$navbar-light-color: getColour(dark);
+$navbar-light-active-color: getColour(dark-pink);

@@ -1,0 +1,33 @@
+.common-squares {
+	width: 250px;
+	height: 250px;
+	border-radius: 15px;
+	position: relative;
+	box-shadow: $box-shadow;
+}
+
+.squares {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 250px);
+	margin: 5rem 1rem;
+	grid-gap: 1.5rem;
+	justify-content: center;
+
+	&__item {
+		@extend .common-squares;
+		background: getColour(primary);
+		border: none;
+	}
+
+	&__item--white {
+		@extend .common-squares;
+		background: white;
+		border: 3px solid getColour(dark-pink);
+	}
+
+	&__item--pink {
+		@extend .common-squares;
+		background: getColour(dark-pink);
+		border: 3px solid white;
+	}
+}
