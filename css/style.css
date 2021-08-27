@@ -10594,20 +10594,17 @@ h1 {
   border: 3px solid white;
 }
 
-footer {
+.footer {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
   position: fixed;
   height: 44px;
   bottom: 0px;
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
-}
-
-.footer {
   background: #f4f3ee;
   padding: 1rem;
-  font-family: "Open Sans", sans-serif;
-  font-size: 12px;
 }
 .footer__container {
   display: -webkit-box;
